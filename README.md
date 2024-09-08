@@ -73,3 +73,37 @@ I am currently enrolled as a Senior at the University of Cincinnati pursuing an 
 ### Capstone Project Sought
 
 I am seeking a capstone project that aligns with my expertise in full stack development, data science, data analysis, or machine learning. With strong proficiency in Python and web development, I am eager to tackle a project that allows me to leverage my skills in these areas. I am particularly interested in opportunities related to business domains, such as finance or accounting, where I can apply my technical skills to real-world challenges. However, I am also open to exploring other project ideas that align with my expertise and provide a meaningful challenge. My goal is to contribute to a project that showcases my capabilities and drives impactful results.
+
+**--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------**
+**Jason Yang**
+**Contact Information**: Yang2j7@mail.uc.edu
+
+**About Me**
+Hi, I’m Jason. I’ve had three co-op rotations at the same company International TechneGroup Inc. located in Milford, OH. The co-op experience consists mainly of Python and C++. Gained some fundamentals in game developing and tried creating my own game through Unity game engine alongside with a mentor from game developing field. Interested in anything developing and hands-on related projects.
+
+**Co-op Experiences/Projects**
+**ITI-Wipro, Milford, OH**
+Software Engineer Co-op
+-	Implemented 10+ software enhancements requested by our customers providing smoother user interfaces.
+-	Enhanced 15+ existing software features to be more reliable and stable for customer’s everyday needs.
+-	Provided quality check on significant defects in a native model that impacts downstream re-use.
+-	Identified unacceptable differences between native and derivative models and unintentional or undocumented changes between revisions of a model.
+
+**Game Development Project**
+Individual – Game Developer
+- Developed a top down 2D pixel game using the Unity game engine and C# script from scratch.
+- Learned various concepts on game developing both technical and behavioral and self-discipline.
+- Collaborated with game development mentor 1-2 times a month to discuss and report progress.
+- Released a demo/trailer as the final product and presented it in front of mentor.
+
+
+**Skills**
+**Programming**: Python, C++, C#, HTML
+**Game Engine**: Unity, Unreal
+**Operating System**: Windows, MacOS
+
+**Areas of Interest**
+- Game Development
+- Web App Development 
+- Augmented Reality (AR) or Virtual Reality (VR)
+- Software Development
