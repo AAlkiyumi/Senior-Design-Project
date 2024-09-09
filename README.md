@@ -1,6 +1,6 @@
 # Senior-Design-Project
 
-## Hello, I'm Almaamar Alkiyumi
+## Almaamar Alkiyumi
 
 ### Professional Biography
 
