@@ -107,3 +107,100 @@ Individual – Game Developer
 - Web App Development 
 - Augmented Reality (AR) or Virtual Reality (VR)
 - Software Development
+
+# J. Matthew Myers
+
+## Contact Info
+myers3jm@mail.uc.edu
+
+## Biography
+Matt Myers is a senior at the University of Cincinnati. Matt will graduate in Spring, 2025 with a Bachelor's degree in computer science and a certificate in cyber operations with a focus on cyber attacks and security.
+
+## Co-op Work Experience
+### Rotation 1
+Title: Embedded Security Firmware - Summer
+Student
+
+Company: Lexmark International
+
+Employment Period: May 2022 - Aug 2022
+
+Technical skills:
+- C++
+- CMake
+- Cross-platform development
+- Git
+- Linux
+
+Non-technical Skills:
+- Microsoft Office
+- Scrum
+- Communication
+
+### Rotation 2
+Title: Embedded Security Firmware - Spring
+Student
+
+Company: Lexmark International
+
+Employment Period: Jan 2023 - Apr 2023
+
+Technical Skills:
+- Python
+- C
+- YAML
+- HTML
+- CSS
+- JavaScript
+
+Non-technical Skills:
+- Microsoft Office
+- Scrum
+- Communication
+
+### Rotation 3
+Title: Software Engineering Co-op
+
+Company: SHP
+
+Employment Period: Aug 2023 - Dec 2023
+
+Technical Skills:
+- C#
+- .NET Framework
+- Git
+- Autodesk Revit
+- Debugging
+
+Non-technical Skills:
+- Google Workspaces
+- Communication
+- Scrum
+
+### Rotation 4
+Title: Software Engineering Co-op
+
+Company: SHP
+
+Employment Period: May 2024 - Aug 2024
+
+Technical Skills:
+- C#
+- .Net Framework
+- Git
+- Python
+- Rust
+- Autodesk Revit
+- Debugging
+
+Non-technical Skills:
+- Google Workspaces
+- Communication
+- Scrum
+
+## Project Sought
+
+Matt is looking for a project that involves security and/or data science. Such projects might include:
+- Secure web applications (Matt took a course on programming and hacking web apps)
+    - This could include anything, such as a social network, e-commerce site, online game, etc.
+- Some kind of security solution to protect individuals and/or their data
