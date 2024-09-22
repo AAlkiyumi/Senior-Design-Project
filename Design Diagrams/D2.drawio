@@ -1,46 +1,80 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
   <diagram name="Page-1" id="r0Jr2GO2pQrT_eDpwpub">
-    <mxGraphModel dx="954" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1590" dy="1008" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="x3obQRWJ_elbtLBWfNSW-3" value="User goes to the web scraper UI and inserts the URL they wanted more information about" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="220" width="110" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="x3obQRWJ_elbtLBWfNSW-5" value="&lt;div&gt;&lt;div&gt;The web scraper receives the URL, sends it to cloud services for processing, and returns specific product data based on the type of user accessing the information&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="240" y="200" width="110" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="x3obQRWJ_elbtLBWfNSW-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="x3obQRWJ_elbtLBWfNSW-8" target="x3obQRWJ_elbtLBWfNSW-9" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="x3obQRWJ_elbtLBWfNSW-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="x3obQRWJ_elbtLBWfNSW-8" target="x3obQRWJ_elbtLBWfNSW-10" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="x3obQRWJ_elbtLBWfNSW-8" value="Cloud Service" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="400" y="240" width="120" height="80" as="geometry" />
+        <mxCell id="x3obQRWJ_elbtLBWfNSW-5" value="&lt;div&gt;&lt;div&gt;The web scraper receives the URL, breaks it down to product URLs and sends it to cloud services for processing, and returns specific product data based on the type of user accessing the information&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="190" width="140" height="190" as="geometry" />
         </mxCell>
         <mxCell id="x3obQRWJ_elbtLBWfNSW-9" value="AWS Quicksight Data Analysis Dashboard" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="550" y="160" width="110" height="50" as="geometry" />
+          <mxGeometry x="1340" y="198" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="x3obQRWJ_elbtLBWfNSW-10" value="Hey Marvin AI for Data Analysis&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="550" y="360" width="110" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="x3obQRWJ_elbtLBWfNSW-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="x3obQRWJ_elbtLBWfNSW-5" target="x3obQRWJ_elbtLBWfNSW-8" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="390" y="260" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="x3obQRWJ_elbtLBWfNSW-25" value="Raw Data" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="160" y="290" width="80" height="30" as="geometry" />
+          <mxGeometry x="1340" y="280" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="x3obQRWJ_elbtLBWfNSW-26" value="URL" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="175" y="208" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QGwd-FUAiFrpCPLjL1FO-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.009;entryY=0.313;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="x3obQRWJ_elbtLBWfNSW-3" target="x3obQRWJ_elbtLBWfNSW-5">
+        <mxCell id="QGwd-FUAiFrpCPLjL1FO-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.009;entryY=0.313;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="x3obQRWJ_elbtLBWfNSW-3" target="x3obQRWJ_elbtLBWfNSW-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QGwd-FUAiFrpCPLjL1FO-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1.036;entryY=0.833;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="x3obQRWJ_elbtLBWfNSW-5" target="x3obQRWJ_elbtLBWfNSW-3">
+        <mxCell id="lgOWADZtujz5ivyCVqh7-1" value="&lt;p style=&quot;line-height: 120%; padding-right: 30px; padding-left: 30px;&quot;&gt;The HTML string is then passed to Beautiful Soup to convert it to a parsed python HTML object&lt;/p&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;fillOpacity=100;overflow=visible;" vertex="1" parent="1">
+          <mxGeometry x="650" y="228" width="215" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-2" value="&lt;p style=&quot;line-height: 120%; padding: 0px 30px;&quot;&gt;The product URL is passed to Scraping Bee API to convert it to a python HTML string&lt;/p&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="405" y="226" width="225" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.625;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgOWADZtujz5ivyCVqh7-4" target="lgOWADZtujz5ivyCVqh7-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1034" y="223" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.96;exitY=0.7;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgOWADZtujz5ivyCVqh7-4" target="lgOWADZtujz5ivyCVqh7-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1106" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgOWADZtujz5ivyCVqh7-4" target="lgOWADZtujz5ivyCVqh7-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1018" y="405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-4" value="&lt;p style=&quot;line-height: 120%; padding-right: 30px; padding-left: 30px;&quot;&gt;Pandas module is then used to extract information from the object&lt;/p&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;fillOpacity=100;overflow=visible;" vertex="1" parent="1">
+          <mxGeometry x="900" y="228" width="215" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgOWADZtujz5ivyCVqh7-6" target="x3obQRWJ_elbtLBWfNSW-10">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-6" value="Data is stored as CSV file" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="280" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgOWADZtujz5ivyCVqh7-7" target="x3obQRWJ_elbtLBWfNSW-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-7" value="Data is stored in AWS S3&amp;nbsp;cloud storage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="198" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.07;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="x3obQRWJ_elbtLBWfNSW-5" target="lgOWADZtujz5ivyCVqh7-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lgOWADZtujz5ivyCVqh7-2" target="lgOWADZtujz5ivyCVqh7-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lgOWADZtujz5ivyCVqh7-1" target="lgOWADZtujz5ivyCVqh7-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgOWADZtujz5ivyCVqh7-16" value="Raw data is stored as Excel format in the output folder in the application directory for reference" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="360" width="110" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
