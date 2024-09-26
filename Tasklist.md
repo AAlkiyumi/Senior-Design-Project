@@ -8,7 +8,11 @@
 
 
 # Jason Yang
-## Task x
+## Task List:
+1. **Develop and refine the existing backend components of the scraper** to be more user-friendly and adaptable to changes.
+2. **Research about advanced techniques that can improve the algorithms** for more efficient data scraping and data storage optimization.
+3. **Develop and design a developer interface** for developers to manage and update the scraper’s hardcoded components.
+4. **Test and troubleshoot** to ensure that the integration within the existing systems are peforming as intended.
 
 # Matt Myers
 ## Task x
