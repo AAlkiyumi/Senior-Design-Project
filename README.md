@@ -10,9 +10,10 @@
 - [Budget](#budget)
 - [Appendix](#appendix)
 # Team Names
-## [Almaamar Alkiyumi](#almaamar-alkiyumi-1)
-## [Jason Yang](#jason-yang-1)
-## [Matt Myers](#j-matthew-myers)
+### [Almaamar Alkiyumi](#almaamar-alkiyumi-1)
+### [Jason Yang](#jason-yang-1)
+### [Matt Myers](#j-matthew-myers)
+### Matt Hunter (Advisor)
 # Project Description
 This project focuses on building an improving a web scraper to collect product and review data from e-commerce websites. Using tools like Scraping Bee, AWS, Selenium, and Pandas, the system retrieves, processes, and stores the data for analysis. Key features include cost-effective solutions, user-friendly interfaces, and comprehensive data extraction and analysis functionalities.
 # User Stories and Design Diagrams
