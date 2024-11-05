@@ -89,7 +89,8 @@ There are potential legal challenges in web scraping, particularly concerning th
 ## Ethical Constraints
 The project must address ethical concerns regarding data collection, especially when scraping user reviews and product information. Ensuring that the collected data is used in a fair and transparent manner is essential to avoid harm to individuals or businesses. Ethical web scraping practices include respecting website policies, obtaining permission where necessary, and avoiding any misuse of the gathered data. The team must also ensure that the project does not contribute to misinformation or data manipulation, promoting ethical use of the information for analysis.
 
-# PPT Slideshow (Assignment 8)
+# PPT Slideshow
+[Project Presentation](https://mailuc-my.sharepoint.com/:p:/g/personal/yang2j7_mail_uc_edu/ETiZlJWsRw5Os9g4ddlx9gIByfHGhJSu7NdVOnhcpccqMQ?e=HXVaKe)
 # Self-Assessment Essays
 ## Almaamar
 ### Introduction
