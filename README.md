@@ -32,10 +32,52 @@ The user wants to see more detailed information about a product inserts a URL us
 The user wanted to gather more information on the product pricing to compare with other markets, it goes through the cloud service in which depending on who is using the web application returns data that can be analyzed. 
 ### Design Level 2
 This web scraping project allows users to input a product URL into a web scraper UI, which then processes the URL to extract relevant information. The scraper breaks down the URL and sends it to cloud services like Scraping Bee for conversion into an HTML string. This string is passed to Beautiful Soup for parsing, creating a structured HTML object. Pandas is used to extract specific data from the parsed HTML, which is then stored as a CSV file, Excel file, and in AWS S3 storage. The data is analyzed using tools like AWS QuickSight and Hey Marvin AI to provide insights based on user requirements.
-# Project Tasks and Timeline (Assignment 5)
+# Project Tasks and Timeline
 ## Task List
-## Timeline
-## Effort Matrix
+### Almaamar Alkiyumi
+#### Task List:
+1. **Redesign the existing scraper to allow users to target reviews of all products on a specific page** of a website, instead of scraping the entire website.
+2. **Redesign the existing scraper to allow users to target reviews of a specific product on a website**, instead of scraping the entire website.
+3. **Develop an executable (.exe)** that allows users to easily launch the UI and automatically run all required dependencies for the scraper.
+4. **Test and validate the functionality and usability** of both interfaces to ensure they meet specified requirements and perform as intended.
+5. **Document the entire project development process**, including detailed steps for setting up, configuring, and running the application. Additionally, create comprehensive user guides for both business users and developers, outlining how to interact with the UI, manage scraping tasks, and monitor website changes.
+
+
+### Jason Yang
+#### Task List:
+1. **Develop and refine the existing backend components of the scraper** to be more user-friendly and adaptable to changes.
+2. **Research about advanced techniques that can improve the algorithms** for more efficient data scraping and data storage optimization.
+3. **Develop and design a developer interface** for developers to manage and update the scraper’s hardcoded components.
+4. **Test and troubleshoot** to ensure that the integration within the existing systems are performing as intended.
+
+### Matt Myers
+#### Task List:
+1. **Evaluate the existing user interface for the web scraper. Document findings.** Note what works and what doesn't. Gather any prior design restrictions and evaluate them to see if they are still applicable.
+2. **Design a maintainable user interface following best practices. Document design choices.** Study UI best practices and learn what common pitfalls to avoid.
+3. **Research frontend frameworks and make an informed selection for the project. Document rationalization for selection.** Review user testimony for popular frameworks such as React, Svelte, Tailwind CSS, etc. Discuss with team the pros and cons of each and see which would be best for integrating with the rest of the tech stack.
+4. **Develop the user interface in the selected frontend framework. Document development process and how maintenance should be performed in order to maintain selected design patterns.** Incrementally implement the features of the user interface. Collaborate on documentation for how the frontend will communicate with the backend.
+5. **Gather user feedback on the frontend user experience. Apply the feedback if reasonable and possible.** Seek out possible test users to gather feedback on how the UI is presented, if the operation of the tool makes sense, etc. Apply any recommendations if they are applicable, and update documentation as needed.
+6. **Test user interface against multiple different aspect ratios to ensure it is operable and presentable on many different screens. Document any findings during this process.** Ensure that the UI works on several common display sizes and orientations.
+
+## Timeline and Effort Matrix
+| Task | Sprints | Effort | Assigned To |
+|------|--------:|--------:|-------------:|
+| Redesign the existing scraper to allow users to target reviews of all products on a specific page | Jan 6 2025 - Feb 3 2025 | 90% Almaamar, 5% Jason, 5% Matt | Almaamar Alkiyumi |
+| Research about advanced techniques that can improve the algorithms | Jan 6 2025 - Feb 3 2025 | 90% Jason, 5% Almaamar, 5% Matt |Jason Yang |
+| Research frontend frameworks and make an informed selection for the project. Document rationalization for selection | Jan 6 2025 - Feb 3 2025 | 90% Matt, 5% Jason, 5% Almaamar | Matt Myers |
+| Redesign the existing scraper to allow users to target reviews of a specific product on a website | Jan 6 2025 - Feb 3 2025 | 90% Almaamar, 5% Jason, 5% Matt | Almaamar Alkiyumi |
+| Evaluate the existing user interface for the web scraper. Document findings | Jan 6 2025 - Feb 3 2025 | 90% Matt, 5% Jason, 5% Almaamar | Matt Myers |
+| Document the entire project development process | Jan 6 2025 - Mar 3 2025 | 90% Almaamar, 5% Jason, 5% Matt | Almaamar Alkiyumi |
+| Design a maintainable user interface following best practices. Document design choices | Feb 3 2025 - Mar 3 2025 | 90% Matt, 5% Jason, 5% Almaamar | Matt Myers |
+| Develop and refine the existing backend components of the scraper | Feb 3 2025 - Mar 3 2025 | 90% Jason, 5% Almaamar, 5% Matt | Jason Yang |
+| Develop the user interface in the selected frontend framework. Document development process and how maintenance should be performed in order to maintain selected design patterns | Feb 3 2025 - Mar 3 2025 | 90% Matt, 5% Jason, 5% Almaamar | Matt Myers |
+| Develop and design a developer interface | Feb 3 2025 - Mar 3 2025 | 90% Jason, 5% Almaamar, 5% Matt | Jason Yang |
+| Develop an executable (.exe) | Mar 3 2025 - Apr 7 2025 | 90% Almaamar, 5% Jason, 5% Matt | Almaamar Alkiyumi |
+| Gather user feedback on the frontend user experience. Apply the feedback if reasonable and possible | Mar 3 2025 - Apr 7 2025 | 90% Matt, 5% Jason, 5% Almaamar | Matt Myers |
+| Test and validate the functionality and usability | Mar 3 2025 - Apr 7 2025 | 90% Almaamar, 5% Jason, 5% Matt | Almaamar Alkiyumi |
+| Test and troubleshoot | Mar 3 2025 - Apr 7 2025 | 90% Jason, 5% Almaamar, 5% Matt | Jason Yang |
+| Test user interface against multiple different aspect ratios to ensure it is operable and presentable on many different screens. Document any findings during this process | Mar 3 2025 - Apr 7 2025 | 90% Matt, 5% Jason, 5% Almaamar | Matt Myers |
+
 # ABET Concerns Essay (Assignment 7)
 # PPT Slideshow (Assignment 8)
 # Self-Assessment Essays (Assignment 3)
