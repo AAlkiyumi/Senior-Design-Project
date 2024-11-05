@@ -3,7 +3,8 @@
 ## [Almaamar Alkiyumi](#almaamar-alkiyumi-1)
 ## [Jason Yang](#jason-yang-1)
 ## [Matt Myers](#j-matthew-myers)
-# Project Description (Assignment 2)
+# Project Description
+This project focuses on building an improving a web scraper to collect product and review data from e-commerce websites. Using tools like Scraping Bee, AWS, Selenium, and Pandas, the system retrieves, processes, and stores the data for analysis. Key features include cost-effective solutions, user-friendly interfaces, and comprehensive data extraction and analysis functionalities.
 # User Stories and Design Diagrams
 ## User Stories
 1. As a business analyst, I want to scrape product data from multiple e-commerce websites so that I can efficiently gather information for market research and pricing analysis. 
