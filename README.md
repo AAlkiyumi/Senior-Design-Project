@@ -310,4 +310,6 @@ Matt is looking for a project that involves security and/or data science. Such p
 - Some kind of security solution to protect individuals and/or their data
 
 # Budget
+[Budget Spreadsheet](https://mailuc-my.sharepoint.com/:x:/g/personal/yang2j7_mail_uc_edu/Ed0iUGDF_KBFhi0Ap-VTnSsBIEjsMJDH-MiOvC3c57rThw?e=squRde)
 # Appendix
+[Project Management Documents](https://mailuc-my.sharepoint.com/:f:/g/personal/yang2j7_mail_uc_edu/EkToROb1YWlDn7W-9EvHri8BzhbYmTYkS53lXtyPtm57Bw?e=QJvycg)
