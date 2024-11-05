@@ -29,13 +29,13 @@ This project focuses on building an improving a web scraper to collect product a
 ## Design Diagrams
 
 ### Design Level 0
-![D0](/Design%20Diagrams/D0.png)
+![D0](/Assignments/Assignment%204/Design%20Diagrams/D0.png)
 
 ### Design Level 1
-![D1](/Design%20Diagrams/D1.png)
+![D1](/Assignments/Assignment%204/Design%20Diagrams/D1.png)
 
 ### Design Level 2
-![D2](/Design%20Diagrams/D2.png)
+![D2](/Assignments/Assignment%204/Design%20Diagrams/D2.png)
 
 ## Description of Diagrams
 ### Design Level 0
