@@ -78,7 +78,16 @@ This web scraping project allows users to input a product URL into a web scraper
 | Test and troubleshoot | Mar 3 2025 - Apr 7 2025 | 90% Jason, 5% Almaamar, 5% Matt | Jason Yang |
 | Test user interface against multiple different aspect ratios to ensure it is operable and presentable on many different screens. Document any findings during this process | Mar 3 2025 - Apr 7 2025 | 90% Matt, 5% Jason, 5% Almaamar | Matt Myers |
 
-# ABET Concerns Essay (Assignment 7)
+# ABET Concerns Essay
+## Economic Constraints
+Although Midea has agreed to fund the project, the budget is limited to less than $200 per month. This constraint requires the team to manage resources carefully, ensuring that the use of paid services like AWS and Scraping Bee stays within the monthly budget. Balancing performance with cost efficiency will be key. The team might need to explore cost-saving alternatives, such as optimizing the number of API calls or using free-tier services wherever possible. This financial limitation could influence the scale and frequency of data collection.
+## Security Constraints
+Security is a crucial factor due to the nature of web scraping and data storage. The project involves accessing and storing data from e-commerce websites, which raises concerns about data protection and privacy. It's important to ensure that sensitive information is not exposed during the scraping process or while storing it in cloud services like AWS. The team must implement proper encryption, access controls, and regular security audits to prevent unauthorized access and ensure compliance with data privacy regulations.
+## Legal Constraints
+There are potential legal challenges in web scraping, particularly concerning the terms of service of websites being scraped. Many websites have restrictions on automated data extraction, and violating these terms could lead to legal issues. The team needs to ensure that the scraping activities comply with all relevant regulations, such as not scraping private or copyrighted content without permission. This legal constraint may limit the scope of websites that can be targeted and require a thorough review of each website's legal policies before scraping.
+## Ethical Constraints
+The project must address ethical concerns regarding data collection, especially when scraping user reviews and product information. Ensuring that the collected data is used in a fair and transparent manner is essential to avoid harm to individuals or businesses. Ethical web scraping practices include respecting website policies, obtaining permission where necessary, and avoiding any misuse of the gathered data. The team must also ensure that the project does not contribute to misinformation or data manipulation, promoting ethical use of the information for analysis.
+
 # PPT Slideshow (Assignment 8)
 # Self-Assessment Essays (Assignment 3)
 # Professional Biographies
