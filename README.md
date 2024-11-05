@@ -1,4 +1,14 @@
 # Table of Contents
+- [Team Names](#team-names)
+- [Project Description](#project-description)
+- [User Stories and Design Diagrams](#user-stories-and-design-diagrams)
+- [Project Tasks and Timeline](#project-tasks-and-timeline)
+- [ABET Concerns Essay](#abet-concerns-essay)
+- [PPT Slideshow](#ppt-slideshow)
+- [Self-Assessment Essays](#self-assessment-essays)
+- [Professional Biographies](#professional-biographies)
+- [Budget](#budget)
+- [Appendix](#appendix)
 # Team Names
 ## [Almaamar Alkiyumi](#almaamar-alkiyumi-1)
 ## [Jason Yang](#jason-yang-1)
