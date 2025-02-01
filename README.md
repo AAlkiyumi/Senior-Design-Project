@@ -29,13 +29,13 @@ This project focuses on building an improving a web scraper to collect product a
 ## Design Diagrams
 
 ### Design Level 0
-![D0](/Assignments/Assignment%204/Design%20Diagrams/D0.png)
+![D0](/Assignments/Semester%201/Assignment%204/Design%20Diagrams/D0.png)
 
 ### Design Level 1
-![D1](/Assignments/Assignment%204/Design%20Diagrams/D1.png)
+![D1](/Assignments/Semester%201/Assignment%204/Design%20Diagrams/D1.png)
 
 ### Design Level 2
-![D2](/Assignments/Assignment%204/Design%20Diagrams/D2.png)
+![D2](/Assignments/Semester%201/Assignment%204/Design%20Diagrams/D2.png)
 
 ## Description of Diagrams
 ### Design Level 0
@@ -312,4 +312,4 @@ Matt is looking for a project that involves security and/or data science. Such p
 # Budget
 [Budget Spreadsheet](https://mailuc-my.sharepoint.com/:x:/g/personal/yang2j7_mail_uc_edu/Ed0iUGDF_KBFhi0Ap-VTnSsBIEjsMJDH-MiOvC3c57rThw?e=squRde)
 # Appendix
-[Project Management Documents](https://mailuc-my.sharepoint.com/:f:/g/personal/yang2j7_mail_uc_edu/EkToROb1YWlDn7W-9EvHri8BzhbYmTYkS53lXtyPtm57Bw?e=QJvycg)
+[Project Management Documents: Semester 1](https://mailuc-my.sharepoint.com/:f:/g/personal/yang2j7_mail_uc_edu/EkToROb1YWlDn7W-9EvHri8BzhbYmTYkS53lXtyPtm57Bw?e=QJvycg)
