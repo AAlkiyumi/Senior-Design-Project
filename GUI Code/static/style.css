@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar - Full Height & Overlaps Navbar */
+.sidebar {
+    width: 250px;
+    background: #2C3E50; /* Dark background */
+    color: white;
+    height: 100vh; /* Full screen height */
+    padding: 20px;
+    position: fixed;
+    top: 0; /* Start from the very top */
+    left: 0;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1050; /* Higher than navbar to overlap */
+}
+
+/* Sidebar Links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    background: rgba(23, 162, 184, 0.8);
+    transform: scale(1.05);
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+/* Main Content - Pushes Right to Make Space for Sidebar */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Navbar - Ensures Sidebar Covers White Background */
+.navbar {
+    position: relative;
+    z-index: 1000; /* Lower than sidebar */
+    background: white;
+    height: 50px;
+    padding: 10px 15px;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    margin-right: 15px;
+    z-index: 1100; /* Ensure it's above navbar */
+}
+
+/* When Sidebar is Hidden (Expand Content) */
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.main-content.expanded {
+    margin-left: 0;
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Dashboard Stats - Responsive Cards */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Table - Ensures Responsiveness */
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #5d77a8;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9em;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}

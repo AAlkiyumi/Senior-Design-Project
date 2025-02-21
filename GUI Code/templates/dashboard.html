@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white vh-100 position-fixed sidebar" id="sidebar">
+        <button class="btn btn-outline-light d-md-none mb-3" onclick="toggleSidebar()">Close</button>
+        <h4 class="text-center">Dashboard</h4>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item"><a href="#" class="nav-link text-white">🏠 Home</a></li>
+            <li><a href="#" class="nav-link text-white">📦 Products</a></li>
+            <li><a href="#" class="nav-link text-white">📊 Reports</a></li>
+            <li><a href="#" class="nav-link text-white">📉 Analytics</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid main-content">
+        <!-- Navbar (Thinner & Neutral Color) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 shadow-sm" style="height: 50px;">
+            <div class="container-fluid d-flex justify-content-between">
+                <!-- Sidebar Toggle Button (Always Visible) -->
+                <button class="btn btn-outline-secondary sidebar-toggle" onclick="toggleSidebar()">☰ Menu</button>
+        
+                <span class="navbar-brand fw-bold" style="font-size: 1.5rem;">Product Dashboard</span>
+        
+                <!-- Profile Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        👤 User
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="profileDropdown">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">History</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('logout') }}">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Dashboard Stats -->
+        <div class="container mt-4">
+            <div class="row g-3">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card text-center shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Products</h5>
+                            <p class="card-text fs-4">120</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card text-center shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">In Stock</h5>
+                            <p class="card-text fs-4">90</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card text-center shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Out of Stock</h5>
+                            <p class="card-text fs-4">30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card text-center shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Average Price</h5>
+                            <p class="card-text fs-4">$24.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Table -->
+        <div class="container mt-4">
+            <h2 class="text-center text-primary">Product Data</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTable">
+                        <!-- Data will be loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-4 py-3 text-muted">
+            &copy; 2025 Data ScraperX. All rights reserved.
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript for Sidebar & Dynamic Data -->
+    <script>
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            let content = document.querySelector(".main-content");
+    
+            sidebar.classList.toggle("hidden");
+            content.classList.toggle("expanded");
+        }
+
+        // Fetching dynamic data
+        document.addEventListener("DOMContentLoaded", function() {
+            const productData = [
+                { name: "Product A", category: "Electronics", price: "$199.99", availability: "In Stock" },
+                { name: "Product B", category: "Home", price: "$24.99", availability: "Out of Stock" },
+                { name: "Product C", category: "Clothing", price: "$49.99", availability: "In Stock" }
+            ];
+
+            const tableBody = document.getElementById("productTable");
+            tableBody.innerHTML = productData.map(product => `
+                <tr>
+                    <td>${product.name}</td>
+                    <td>${product.category}</td>
+                    <td>${product.price}</td>
+                    <td>${product.availability}</td>
+                </tr>
+            `).join('');
+        });
+    </script>
+
+</body>
+</html>
