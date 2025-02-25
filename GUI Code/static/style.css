@@ -5,9 +5,18 @@
     box-sizing: border-box;
 }
 
+/* Logo  */
+.logo {
+    width: 250px; /* Increase logo size if needed */
+    height: 250px;
+    object-fit: contain; /* Ensures logo fits well */
+    display: block;
+    margin: 0 auto; /* Centers the logo */
+}
+
 /* Sidebar - Full Height & Overlaps Navbar */
 .sidebar {
-    width: 250px;
+    width: 210px;
     background: #2C3E50; /* Dark background */
     color: white;
     height: 100vh; /* Full screen height */
@@ -43,10 +52,23 @@
 
 /* Main Content - Pushes Right to Make Space for Sidebar */
 .main-content {
-    margin-left: 250px;
+    margin-left: 225px;
     padding: 20px;
     width: calc(100% - 250px);
     transition: margin-left 0.3s ease-in-out;
+}
+
+/* Ensure images scale with screen size */
+.main-content img {
+    max-width: 90%;  /* Adjust width dynamically */
+    height: auto;
+}
+
+/* Adjust image size for smaller screens */
+@media (max-width: 768px) {
+    .main-content img {
+        max-width: 100%; /* Full width for small screens */
+    }
 }
 
 /* Navbar - Ensures Sidebar Covers White Background */
@@ -140,10 +162,27 @@ table th {
     }
 }
 
-/* Footer */
+/* Make the entire page use flexbox */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure main content expands, pushing footer down */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer - Always at the Bottom */
 footer {
     text-align: center;
-    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto; /* Push footer to bottom */
     font-size: 0.9em;
     color: #666;
 }

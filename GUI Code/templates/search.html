@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data ScraperX</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white vh-100 position-fixed sidebar" id="sidebar">
+        <!-- Logo & Text-->
+        <div class="text-center mb-3">
+            <!-- <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo"> -->
+            <h4 class="mt-2" style="margin-right: 10px;">Menu</h4>
+        </div>
+
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li>───────────────</li>
+            <li class="nav-item"><a href="{{ url_for('dashboard') }}" class="nav-link text-white">🏠 Home</a></li>
+            <li><a href="{{ url_for('search_page') }}" class="nav-link text-white">🔍 Search</a></li>
+            <li><a href="{{ url_for('data_page') }}" class="nav-link text-white">📊 Data</a></li>
+            <li><a href="{{ url_for('review_page') }}" class="nav-link text-white">⭐️ Reviews</a></li>
+            <li>───────────────</li>
+            <li><a href="{{ url_for('faq') }}" class="nav-link text-white">❓ FAQ</a></li>
+            <li><a href="{{ url_for('about_us') }}" class="nav-link text-white">ℹ️ About Us</a></li>
+            <li>───────────────</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid main-content">
+        <!-- Navbar (Thinner & Neutral Color) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 shadow-sm" style="height: 50px;">
+            <div class="container-fluid d-flex justify-content-between">
+                <!-- Sidebar Toggle Button (Always Visible) -->
+                <button class="btn btn-outline-secondary sidebar-toggle" onclick="toggleSidebar()">☰ Menu</button>
+        
+                <span class="navbar-brand fw-bold" style="font-size: 1.5rem;">Search Mode</span>
+        
+                <!-- Profile Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        👤 {{ user.username }}
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="profileDropdown" style="min-width: 120px;">
+                        <li><a class="dropdown-item" href="{{ url_for('profile') }}">My Profile</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('history') }}">History</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('settings') }}">Settings</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('logout') }}">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- URL Input Form -->
+        <div class="container mt-4">
+            <h2 class="text-center text-primary">Search for Products</h2>
+            <form method="POST" action="{{ url_for('scrape_search') }}">
+                <div id="search-url-container">
+                    <div class="input-group mb-2">
+                        <input type="url" name="search_urls[]" class="form-control" placeholder="Enter Product URL (Amazon, Best Buy, Walmart, etc.)" required>
+                    </div>
+                    <label>Number of Pages:</label>
+                    <div class="col-md-1">
+                        <div class="input-group">
+                            <input type="number" name="num_pages" class="form-control" placeholder="" value="1" min="1" max="10000" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success mt-3">Search Products</button>
+            </form>
+        </div>
+
+        <!-- Display Flash Messages -->
+        <div class="container mt-3">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+
+        <!-- Dashboard Stats -->
+        <!--
+        <div class="container mt-4">
+            <div class="row g-3">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card text-center shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Products</h5>
+                            <p class="card-text fs-4">120</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card text-center shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">In Stock</h5>
+                            <p class="card-text fs-4">90</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card text-center shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Out of Stock</h5>
+                            <p class="card-text fs-4">30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card text-center shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Average Price</h5>
+                            <p class="card-text fs-4">$24.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <!-- Product Table -->
+        <!--
+        <div class="container mt-4">
+            <h2 class="text-center text-primary">Results</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTable">
+                    </tbody>
+                </table>
+
+                <form method="POST" action="{{ url_for('download_dataset') }}" class="d-flex flex-column align-items-center">
+                    <button type="submit" class="btn btn-secondary">Download Results</button>
+                </form>
+            </div>
+        </div>
+        -->
+
+        <!-- Results Table -->
+        <div class="container mt-4">
+            <h2 class="text-center text-primary">Results</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if scraped_results %}
+                            {% for product in scraped_results %}
+                            <tr>
+                                <td>{{ product['name'] }}</td>
+                                <td>{{ product['category'] }}</td>
+                                <td>{{ product['price'] }}</td>
+                                <td>{{ product['availability'] }}</td>
+                            </tr>
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td colspan="4" class="text-center text-muted">No data available. Start by scraping a product.</td>
+                            </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            
+                <!-- Download Options -->
+                <form method="POST" action="{{ url_for('download_dataset') }}" class="d-flex flex-column align-items-center">
+                    <button type="submit" class="btn btn-secondary">Download Results</button>
+                </form>
+                
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Logo & Text-->
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+            &copy; 2025 Data ScraperX. All rights reserved.
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript for Sidebar & Dynamic Data -->
+    <script>
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            let content = document.querySelector(".main-content");
+    
+            sidebar.classList.toggle("hidden");
+            content.classList.toggle("expanded");
+        }
+
+        // Fetching dynamic data
+        document.addEventListener("DOMContentLoaded", function() {
+            const productData = [
+                { name: "Product A", category: "Electronics", price: "$199.99", availability: "In Stock" },
+                { name: "Product B", category: "Home", price: "$24.99", availability: "Out of Stock" },
+                { name: "Product C", category: "Clothing", price: "$49.99", availability: "In Stock" }
+            ];
+
+            const tableBody = document.getElementById("productTable");
+            tableBody.innerHTML = productData.map(product => `
+                <tr>
+                    <td>${product.name}</td>
+                    <td>${product.category}</td>
+                    <td>${product.price}</td>
+                    <td>${product.availability}</td>
+                </tr>
+            `).join('');
+        });
+    </script>
+
+</body>
+</html>
