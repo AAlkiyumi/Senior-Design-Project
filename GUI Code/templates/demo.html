@@ -37,18 +37,23 @@
 <!-- Main Content -->
 <main class="main-content">
     <div class="container-fluid mt-4">
-        <h2 class="text-center text-primary">Explore Data ScraperX</h2>
-        <p class="text-center">Preview the dashboard features. Sign up or log in to start scraping data.</p>
+        <h2 class="text-center text-primary"><strong>Explore Data ScraperX</h2>
+        <p class="text-center"><strong>Preview the dashboard features. Sign up or log in to start scraping data.</p>
+        
+        <!-- Image -->
+        <div class="container text-center">
+            <img src="{{ url_for('static', filename='images/graph.png') }}" alt="Graph" class="img-fluid" style="height: 350px;">
+        </div>
 
         <!-- URL Input Preview (Read-Only) -->
-        <div class="container mt-4">
+        <div class="container mt-3 mb-4 p-5">
             <h3 class="text-center">Scrape Product Data (Preview)</h3>
             <form class="d-flex flex-column align-items-center">
                 <input type="url" class="form-control w-50 mb-2" placeholder="Enter Product URL (Disabled)" disabled>
                 <input type="number" class="form-control w-25 text-center" placeholder="Number of Pages" min="1" disabled>
-                <button type="button" class="btn btn-secondary mt-2" disabled>Scrape</button>
+                <button type="button" class="btn btn-success mt-2" disabled>Scrape</button>
             </form>
-            <p class="text-center text-muted mt-2">Log in to start scraping data.</p>
+            <p class="text-center text-muted mt-2"><strong>Log in to start scraping data.</p>
         </div>
 
         <!-- Sample Stats -->
@@ -57,7 +62,7 @@
                 <div class="card text-center shadow h-100">
                     <div class="card-body">
                         <h5 class="card-title">Total Scrapes</h5>
-                        <p class="card-text fs-4">10,00+</p>
+                        <p class="card-text fs-4">1,000+</p>
                     </div>
                 </div>
             </div>
@@ -73,7 +78,7 @@
                 <div class="card text-center shadow h-100">
                     <div class="card-body">
                         <h5 class="card-title">Avg. Scrape Time</h5>
-                        <p class="card-text fs-4">2.5s</p>
+                        <p class="card-text fs-4">~30 Minutes</p>
                     </div>
                 </div>
             </div>
@@ -96,7 +101,7 @@
         -->
 
         <!-- Call to Action -->
-        <div class="text-center mt-4">
+        <div class="text-center mt-5">
             <p class="lead">Ready to start scraping? Create an account now!</p>
             <a href="{{ url_for('register') }}" class="btn btn-lg btn-primary">Sign Up</a>
             <a href="{{ url_for('login') }}" class="btn btn-lg btn-outline-secondary ms-2">Log In</a>

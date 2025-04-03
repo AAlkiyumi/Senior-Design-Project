@@ -23,8 +23,10 @@
             <li>───────────────</li>
             <li class="nav-item"><a href="{{ url_for('dashboard') }}" class="nav-link text-white">🏠 Home</a></li>
             <li><a href="{{ url_for('search_page') }}" class="nav-link text-white">🔍 Search</a></li>
+            <!--
             <li><a href="{{ url_for('data_page') }}" class="nav-link text-white">📊 Data</a></li>
             <li><a href="{{ url_for('review_page') }}" class="nav-link text-white">⭐️ Reviews</a></li>
+            -->
             <li>───────────────</li>
             <li><a href="{{ url_for('faq') }}" class="nav-link text-white">❓ FAQ</a></li>
             <li><a href="{{ url_for('about_us') }}" class="nav-link text-white">ℹ️ About Us</a></li>
@@ -64,28 +66,34 @@
         </nav>
 
         <div class="container mt-5">
-            <h2 class="text-center text-primary">Welcome to Data ScraperX</h2>
-            <p class="text-center lead"><strong>Easily scrape product data, analyze search results, and extract reviews in just a few clicks.</p>
+            <h2 class="text-center text-primary"><strong>Welcome to Data ScraperX</h2>
+            <p class="text-center lead "><strong>Easily scrape product data, analyze search results, and extract reviews in just a few clicks.</strong></p>
 
             <!-- How It Works Section -->
             <div class="row mt-4">
                 <div class="col-md-12 text-center">
-                    <h5 class="mt-3"><strong>Step 1: Enter URLs</h5>
-                    <p>Provide product URLs from Amazon, Best Buy, or other supported sites.</p>
-                    <img src="{{ url_for('static', filename='images/step1.png') }}" alt="Step 1" class="img-fluid">
-                    <h5 class="row mt-5"> </h5>
+                    <div class="p-4 mb-3 rounded shadow-sm" style="background-color:rgb(221, 221, 221);" style="max-width: 100px;">
+                        <h3 class="mt-3"><strong>Step 1: Enter URLs</h3>
+                        <p class="fs-5">Provide product URLs from Amazon, Best Buy, or other supported sites.</p>
+                        <img src="{{ url_for('static', filename='images/step1.png') }}" alt="Step 1" class="img-fluid">
+                        <h5 class="row mt-5"> </h5>
+                    </div>
                 </div>
                 <div class="col-md-12 text-center">
-                    <h5 class="mt-3"><strong>Step 2: Choose Options</h5>
-                    <p>Select the number of pages and other filtering options that may apply.</p>
-                    <img src="{{ url_for('static', filename='images/step2.png') }}" alt="Step 2" class="img-fluid">
-                    <h5 class="row mt-5"> </h5>
+                    <div class="p-4 mb-3 rounded shadow-sm" style="background-color:rgb(221, 221, 221);">
+                        <h3 class="mt-3"><strong>Step 2: Choose Options</h3>
+                        <p class="fs-5">Select the number of pages and other filtering options that may apply.</p>
+                        <img src="{{ url_for('static', filename='images/step2.png') }}" alt="Step 2" class="img-fluid">
+                        <h5 class="row mt-5"> </h5>
+                    </div>
                 </div>
                 <div class="col-md-12 text-center">
-                    <h5 class="mt-3"><strong>Step 3: Scrape & Analyze</h5>
-                    <p>Click "Scrape" to extract data and download results as CSV or Excel.</p>
-                    <img src="{{ url_for('static', filename='images/step3.png') }}" alt="Step 3" class="img-fluid">
-                    <h5 class="row mt-5"> </h5>
+                    <div class="p-4 mb-3 rounded shadow-sm" style="background-color:rgb(221, 221, 221);">
+                        <h3 class="mt-3"><strong>Step 3: Scrape & Analyze</h3>
+                        <p class="fs-5">Click "Scrape" to extract data and download results as CSV or Excel.</p>
+                        <img src="{{ url_for('static', filename='images/step3.png') }}" alt="Step 3" class="img-fluid">
+                        <h5 class="row mt-5"> </h5>
+                    </div>
                 </div>
             </div>
 

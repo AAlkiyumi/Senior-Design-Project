@@ -23,8 +23,10 @@
             <li>───────────────</li>
             <li class="nav-item"><a href="{{ url_for('dashboard') }}" class="nav-link text-white">🏠 Home</a></li>
             <li><a href="{{ url_for('search_page') }}" class="nav-link text-white">🔍 Search</a></li>
+            <!--
             <li><a href="{{ url_for('data_page') }}" class="nav-link text-white">📊 Data</a></li>
             <li><a href="{{ url_for('review_page') }}" class="nav-link text-white">⭐️ Reviews</a></li>
+            -->
             <li>───────────────</li>
             <li><a href="{{ url_for('faq') }}" class="nav-link text-white">❓ FAQ</a></li>
             <li><a href="{{ url_for('about_us') }}" class="nav-link text-white">ℹ️ About Us</a></li>
@@ -59,7 +61,7 @@
         
         <!-- Review Scraping Form -->
         <div class="container mt-4">
-            <h2 class="text-center text-primary">Scrape Product Reviews</h2>
+            <h2 class="text-center text-primary"><strong>Scrape Product Reviews</strong></h2>
             <form method="POST" action="{{ url_for('scrape_reviews') }}">
                 <div id="review-url-container">
                     <div class="input-group mb-2">
