@@ -1,6 +1,7 @@
 # Table of Contents
 - [Team Names](#team-names)
 - [Project Description](#project-description)
+- [User Interface](#user-interface)
 - [User Stories and Design Diagrams](#user-stories-and-design-diagrams)
 - [Project Tasks and Timeline](#project-tasks-and-timeline)
 - [ABET Concerns Essay](#abet-concerns-essay)
@@ -16,6 +17,12 @@
 ### Matt Hunter (Advisor)
 # Project Description
 This project focuses on building an improving a web scraper to collect product and review data from e-commerce websites. Using tools like Scraping Bee, AWS, Selenium, and Pandas, the system retrieves, processes, and stores the data for analysis. Key features include cost-effective solutions, user-friendly interfaces, and comprehensive data extraction and analysis functionalities.
+# User Interface
+![welcome](./screenshots/001.png)
+
+![instructions](./screenshots/002.png)
+
+![graph](./screenshots/004.png)
 # User Stories and Design Diagrams
 ## User Stories
 1. As a business analyst, I want to scrape product data from multiple e-commerce websites so that I can efficiently gather information for market research and pricing analysis. 
