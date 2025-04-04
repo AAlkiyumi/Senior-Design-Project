@@ -322,6 +322,14 @@ Matt is looking for a project that involves security and/or data science. Such p
     - This could include anything, such as a social network, e-commerce site, online game, etc.
 - Some kind of security solution to protect individuals and/or their data
 
+# Summary of Hours and Justification
+The allocated hours for each team member were essential to successfully developing and deploying our automated web scraping and data analysis system.
+
+Almaamar led the project management efforts, coordinating tasks, setting milestones, and ensuring the team stayed on track. Additionally, he led backend development and AWS cloud integration, dedicating significant time to designing the infrastructure, implementing automation through AWS Lambda, and ensuring seamless data storage in S3.
+
+Jason focused on the frontend, creating a user-friendly Flask-based GUI that streamlined the scraping process and integrating it with the backend, significantly reducing manual workload.
+
+Matt managed API interactions and data visualization, to generate meaningful insights from scraped data and optimizing API requests for efficiency.
 # Budget
 [Budget Spreadsheet](https://mailuc-my.sharepoint.com/:x:/g/personal/yang2j7_mail_uc_edu/Ed0iUGDF_KBFhi0Ap-VTnSsBIEjsMJDH-MiOvC3c57rThw?e=squRde)
 # Appendix
