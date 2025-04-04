@@ -330,7 +330,28 @@ Almaamar led the project management efforts, coordinating tasks, setting milesto
 Jason focused on the frontend, creating a user-friendly Flask-based GUI that streamlined the scraping process and integrating it with the backend, significantly reducing manual workload.
 
 Matt managed API interactions and data visualization, to generate meaningful insights from scraped data and optimizing API requests for efficiency.
-# Budget
-[Budget Spreadsheet](https://mailuc-my.sharepoint.com/:x:/g/personal/yang2j7_mail_uc_edu/Ed0iUGDF_KBFhi0Ap-VTnSsBIEjsMJDH-MiOvC3c57rThw?e=squRde)
+
+| Items     | Semester 1 Budget | Semester 1 Actual spent | Semester 1 Notes     | Semester 2 Budget | Semester 2 Actual spent | Semester 2 Notes     |
+|-----------|-------------------|-------------------------|----------------------|-------------------|-------------------------|----------------------|
+| Almaamar  | $2,400.00         | $1,840.00               | 60 hrs @ $40/hr      | $2,400.00         | $2,040.00               | 60 hrs @ $40/hr      |
+| Jason     | $2,400.00         | $1,680.00               | 60 hrs @ $40/hr      | $2,400.00         | $2,000.00               | 60 hrs @ $40/hr      |
+| Matt      | $2,400.00         | $1,720.00               | 60 hrs @ $40/hr      | $2,400.00         | $1,860.00               | 60 hrs @ $40/hr      |
+| **Total** | **$7,200.00**     | **$5,240.00**           |                      | **$7,200.00**     | **$5,900.00**           |                      |
+# Summary of Expenses
+Budget:
+
+| Items          | Semester 1 Budget | Semester 1 Actual spent | Semester 2 Budget | Semester 2 Actual spent |
+|----------------|-------------------|-------------------------|-------------------|-------------------------|
+| Open AI        | $400.00           | $-                       | $200.00           | $-                       |
+| Scraping Bee   | $200.00           | $-                       | $100.00           | $-                       |
+| Nord VPN       | $100.00           | $-                       | $100.00           | $-                       |
+| Unwrangle API  | $300.00           | $-                       | $600.00           | $200.00                 |
+| **Total**      | **$1,000.00**     | **$-**                   | **$1,000.00**     | **$200.00**             |
 # Appendix
 [Project Management Documents: Semester 1](https://mailuc-my.sharepoint.com/:f:/g/personal/yang2j7_mail_uc_edu/EkToROb1YWlDn7W-9EvHri8BzhbYmTYkS53lXtyPtm57Bw?e=QJvycg)
+
+[Project Management Documents: Semester 2](https://mailuc-my.sharepoint.com/personal/yang2j7_mail_uc_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyang2j7%5Fmail%5Fuc%5Fedu%2FDocuments%2FSenior%20Design%2FSemester%202%2FProject%20Management&ga=1)
+
+[Budget Spreadsheet: Semester 1](https://mailuc-my.sharepoint.com/:x:/g/personal/yang2j7_mail_uc_edu/ETL87IszRJdFuwLDh1HGlvcBnENUyx5B7MfsDIe_I_HJ1Q?e=1BD0yd)
+
+[Budget Spreadsheet: Semester 2](https://mailuc-my.sharepoint.com/:x:/g/personal/yang2j7_mail_uc_edu/Ed0iUGDF_KBFhi0Ap-VTnSsBIEjsMJDH-MiOvC3c57rThw?e=squRde)
