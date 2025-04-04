@@ -2,6 +2,7 @@
 - [Team Names](#team-names)
 - [Project Description](#project-description)
 - [User Interface](#user-interface)
+- [Test Plan and Results](#test-plan-and-results)
 - [User Stories and Design Diagrams](#user-stories-and-design-diagrams)
 - [Project Tasks and Timeline](#project-tasks-and-timeline)
 - [ABET Concerns Essay](#abet-concerns-essay)
@@ -23,6 +24,8 @@ This project focuses on building an improving a web scraper to collect product a
 ![instructions](./screenshots/002.png)
 
 ![graph](./screenshots/004.png)
+# Test Plan and Results
+[Test Plan and Results](./Assignments/Semester2/Assignment%20#1%20-%20Test%20Plan.md)
 # User Stories and Design Diagrams
 ## User Stories
 1. As a business analyst, I want to scrape product data from multiple e-commerce websites so that I can efficiently gather information for market research and pricing analysis. 
