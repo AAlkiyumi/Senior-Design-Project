@@ -8,9 +8,11 @@
 - [Project Tasks and Timeline](#project-tasks-and-timeline)
 - [ABET Concerns Essay](#abet-concerns-essay)
 - [PPT Slideshow](#ppt-slideshow)
+- [Senior Design Poster](#Senior-Design-Poster)
 - [Self-Assessment Essays](#self-assessment-essays)
 - [Professional Biographies](#professional-biographies)
-- [Budget](#budget)
+- [Summary of Hours and Justification](#Summary-of-Hours-and-Justification)
+- [Summary of Expenses](#Summary-of-Expenses)
 - [Appendix](#appendix)
 # Team Names
 ### [Almaamar Alkiyumi](#almaamar-alkiyumi-1)
@@ -114,7 +116,11 @@ There are potential legal challenges in web scraping, particularly concerning th
 The project must address ethical concerns regarding data collection, especially when scraping user reviews and product information. Ensuring that the collected data is used in a fair and transparent manner is essential to avoid harm to individuals or businesses. Ethical web scraping practices include respecting website policies, obtaining permission where necessary, and avoiding any misuse of the gathered data. The team must also ensure that the project does not contribute to misinformation or data manipulation, promoting ethical use of the information for analysis.
 
 # PPT Slideshow
-[Project Presentation](https://mailuc-my.sharepoint.com/:p:/g/personal/yang2j7_mail_uc_edu/ETiZlJWsRw5Os9g4ddlx9gIByfHGhJSu7NdVOnhcpccqMQ?e=HXVaKe)
+[Project Presentation](https://github.com/AAlkiyumi/Senior-Design-Project/blob/main/Assignments/Semester2/Assignment%20%233%20-%20Presentation%20Slidedeck.pptx)
+
+# Senior Design Poster
+[Senior Design Poster](https://github.com/AAlkiyumi/Senior-Design-Project/blob/main/Assignments/Semester2/Assignment%20%234%20-%20Senior%20Design%20Poster.pdf)
+
 # Self-Assessment Essays
 ## Almaamar
 ### Introduction
@@ -338,8 +344,6 @@ Matt managed API interactions and data visualization, to generate meaningful ins
 | Matt      | $2,400.00         | $1,720.00               | 60 hrs @ $40/hr      | $2,400.00         | $1,860.00               | 60 hrs @ $40/hr      |
 | **Total** | **$7,200.00**     | **$5,240.00**           |                      | **$7,200.00**     | **$5,900.00**           |                      |
 # Summary of Expenses
-Budget:
-
 | Items          | Semester 1 Budget | Semester 1 Actual spent | Semester 2 Budget | Semester 2 Actual spent |
 |----------------|-------------------|-------------------------|-------------------|-------------------------|
 | Open AI        | $400.00           | $-                       | $200.00           | $-                       |
